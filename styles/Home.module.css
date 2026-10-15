@@ -1,0 +1,115 @@
+.hero {
+  padding: 3rem 0 3.5rem;
+  max-width: 40rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.titulo {
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  margin-bottom: 1rem;
+}
+
+.texto {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 0 0 1.75rem;
+}
+
+.botao {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  transition: background 0.15s ease;
+}
+
+.botao:hover { background: #c84629; }
+
+.destaques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 2rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.destaques h2 { font-size: 1.2rem; margin-bottom: 0.4rem; }
+.destaques p { margin: 0; color: var(--muted); }
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+  padding: 2.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.contatoTexto h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+.contatoTexto p { margin: 0; color: var(--muted); }
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.full { grid-column: 1 / -1; }
+
+.form input,
+.form textarea {
+  font: inherit;
+  color: var(--ink);
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
+
+.form textarea { resize: vertical; }
+
+.enviar {
+  grid-column: 1 / -1;
+  justify-self: start;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.enviar:hover { background: #c84629; }
+
+@media (max-width: 720px) {
+  .contato { grid-template-columns: 1fr; padding: 1.5rem; }
+  .form { grid-template-columns: 1fr; }
+}

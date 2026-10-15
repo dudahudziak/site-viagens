@@ -1,0 +1,35 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(18, 48, 63, 0.12);
+}
+
+.imagem {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  display: block;
+}
+
+.corpo { padding: 1rem 1.15rem 1.25rem; }
+
+.nome {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.descricao {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}

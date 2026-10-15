@@ -1,0 +1,12 @@
+.titulo { font-size: 2.25rem; }
+
+.subtitulo {
+  color: var(--muted);
+  margin: 0.4rem 0 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1.5rem;
+}
